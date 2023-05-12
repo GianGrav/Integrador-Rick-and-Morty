@@ -1,11 +1,11 @@
 import Card from '../Card/Card.jsx';
-import './cards.css';
+import styles from './Cards.module.css';
 
 
 export default function Cards(props) {
    const { characters } = props;
    return (
-      <div class="changuito">
+      <div className={styles['cards-container']}>
          {characters.map((character) => (
             <Card
                id={character.id}

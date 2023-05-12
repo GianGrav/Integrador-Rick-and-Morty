@@ -8,19 +8,19 @@ export default function Nav({ onSearch }) {
 
 
     return (
-        <nav class="navb" >
+        <nav className="navb" >
 
 
             <Link to="/home">
-                <button class="but" >Home</button>
+                <button className="but" >Home</button>
             </Link>
 
             <Link to="/about">
-                <button class="but">About</button>
+                <button className="but">About</button>
             </Link>
 
             <Link to="/favorite">
-                <button class="but" >fav</button>
+                <button className="but" >Favorites</button>
             </Link>
             <ul>
                 <SearchBar onSearch={onSearch} />

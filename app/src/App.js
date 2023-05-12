@@ -15,8 +15,8 @@ import Favorite from './components/Favorites/Favorites.jsx';
 function App() {
 
    const navigate = useNavigate();
-   const [access, setAccess] = useState(false);
-   const EMAIL = 'tobiasa897@gmail.com';
+   const [access, setAccess] = useState(true);
+   const EMAIL = 'giancarlogravagnatrabajo@gmail.com';
    const PASSWORD = 'abc12345';
 
    function login(userData) {

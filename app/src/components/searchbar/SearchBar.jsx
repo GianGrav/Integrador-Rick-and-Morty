@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./SearchBar"
+import styles  from './SearchBar.module.css';
 
 const SearchBar = ({ onSearch }) => {
    const [id, setId] = useState('')
@@ -9,9 +9,9 @@ const SearchBar = ({ onSearch }) => {
    }
 
    return (
-      <div class="sea">
-         <input class="inpu" type='search' id='search' value={id} onChange={handleChange} />
-         <button class="bu" onClick={() => onSearch(id)}>Agregar</button>
+      <div className={styles.container}>
+         <input className={styles.searchInput} type='search' id='search' value={id} onChange={handleChange} />
+         <button className={styles.searchButton} onClick={() => onSearch(id)}>Agregar</button>
       </div>
    );
 }
