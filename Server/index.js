@@ -1,22 +1,17 @@
 const http = require('http');
-
+const cors = require('cors');
+const morgan = require('morgan');
 const express = require('express');
 const server = express();
 const PORT = 3001;
+const {router} = require("./routes/index.js");
 
-const { Router } = require('express');
-const router = Router();
+server.use(morgan("dev"))
+server.use(express.json());
+server.use(cors());
+server.use('/rickandmorty', router);
 
-const { getCharById } = require('./controllers/getCharById');
-const { login } = require('./controllers/login');
-const { postFav } = require('./controllers/postFav');
-const { deleteFav } = require('./controllers/deleteFav');
-
-router.get('/character/:id', getCharById);
-router.get('/login', login);
-router.post('/fav', postFav);
-router.delete('/fav/:id', deleteFav);
-
+/*
 server.use((req, res, next) => {
    res.header('Access-Control-Allow-Origin', '*');
    res.header('Access-Control-Allow-Credentials', 'true');
@@ -29,11 +24,11 @@ server.use((req, res, next) => {
       'GET, POST, OPTIONS, PUT, DELETE'
    );
    next();
-});
+}); */
 
-server.use(express.json());
 
-server.use('/rickandmorty', router);
+
+
 
 server.listen(PORT, () => {
    console.log('Server raised in port: ' + PORT);

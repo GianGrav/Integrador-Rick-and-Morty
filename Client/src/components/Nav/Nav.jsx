@@ -3,27 +3,27 @@ import SearchBar from '../searchbar/SearchBar';
 import { Link } from 'react-router-dom';
 
 
-export default function Nav({ onSearch }) {
+export default function Nav({onSearch}){
 
 
 
     return (
-        <nav className="navb" >
+        <nav class="navb" >
+            
 
+            <button class="but" >
+                <Link to="/home">Home</Link>
+            </button>
+            
+            <button class="but">
+                <Link to="/about">About</Link>
+            </button>
 
-            <Link to="/home">
-                <button className="but" >Home</button>
-            </Link>
-
-            <Link to="/about">
-                <button className="but">About</button>
-            </Link>
-
-            <Link to="/favorite">
-                <button className="but" >Favorites</button>
-            </Link>
+            <button class="but" >
+                <Link to="/favorite">fav</Link>
+            </button>
             <ul>
-                <SearchBar onSearch={onSearch} />
+            <SearchBar onSearch={onSearch} />
             </ul>
 
         </nav>
