@@ -1,6 +1,6 @@
 import './App.css';
-import Cards from './components/cards/Cards';
-import Nav from './components/nav/Nav';
+import Cards from './components/Cards/Cards';
+import Nav from './components/Nav/Nav';
 import {useState, useEffect} from 'react';
 import axios from 'axios';
 import { Routes, Route} from 'react-router-dom';
@@ -16,8 +16,7 @@ function App(){
 
 const navigate = useNavigate();
 const [access, setAccess] = useState(false);
-const EMAIL = 'tobiasa897@gmail.com';
-const PASSWORD = 'abc12345';
+
 /*
 function login(userData) {
    if (userData.password === PASSWORD && userData.email === EMAIL) {

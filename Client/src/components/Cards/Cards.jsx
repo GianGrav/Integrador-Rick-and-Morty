@@ -1,5 +1,5 @@
-import Card from '../card/Card';
-import './cards.css';
+import Card from '../Card/Card';
+import styles from './Cards.module.css'
 
 
 export default function Cards(props) {
@@ -7,7 +7,7 @@ export default function Cards(props) {
 
 
    return(
-      <div class="changuito">
+      <div className="cards-container">
          {characters.map((character) => (
             <Card
             id={character.id}

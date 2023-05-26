@@ -4,14 +4,10 @@ const About = () => {
     return (
         <div className={style.about}>
             <h2 className={style.hola}>Mas sobre mi</h2>
-            <h4 className={style.hola}>en proceso de ser programador</h4>
-            <p className={style.p}><a href=""><h3 className={style.hola}>gmail</h3></a></p>
-            <p className={style.p}><a href=""><h3 className={style.hola}>linkedin</h3></a></p>
-            <p className={style.p}><a href=""><h3 className={style.hola}>github</h3></a></p>
-            <p className={style.p}><a href=""><h3 className={style.hola}>instagram</h3></a></p>
-            <br />
-            <img className={style.ph} src="yo.jpg" alt="" />
-
+            <h4 className={style.hola}>Full Stack Developer</h4>
+            <a href=""><h3 className={style.hola}>Gmail</h3></a>
+            <a href="https://www.linkedin.com/in/giancarlo-gravagna-19269926a/"><h3 className={style.hola}>Linkedin</h3></a>
+            <a href="https://github.com/GianGrav"><h3 className={style.hola}>Github</h3></a>
         </div>
     )
 }

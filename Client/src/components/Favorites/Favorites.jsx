@@ -1,6 +1,6 @@
 import './Favorite.css'
 import { connect } from "react-redux";
-import Card from '../card/Card';
+import Card from '../Card/Card.jsx';
 import { useDispatch } from 'react-redux';
 import { useState } from 'react';
 import { ordenCards, filterCards} from '../../redux/action';
