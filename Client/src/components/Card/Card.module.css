@@ -1,0 +1,41 @@
+.card{
+    display: flex;
+    flex-direction: column;    
+    max-width: 15rem;
+    min-height: 26rem;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border-radius: 2rem;
+    background-color: rgba(0, 0, 0, 0.522);
+    /* border: 2px solid black; */
+}
+
+
+.card h2{
+    margin: 0.5em;
+    color: rgb(209, 233, 255);
+}
+.nameLink{
+    text-decoration: none;
+}
+
+.favBttn{
+    background: transparent;
+    border: none;
+}
+.boton{    
+    background: transparent;
+    border: none;
+}
+
+.bttns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1em;
+    
+}
+
+img{
+    border-radius: 30px;
+}

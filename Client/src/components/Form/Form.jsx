@@ -1,5 +1,5 @@
 import { useState } from "react"
-import {Validation} from '../../validacion'
+import {Validation} from '../../validation'
 import style from './Form.module.css'
 
 const Form = (props)=>{
@@ -16,7 +16,7 @@ const Form = (props)=>{
         setUserData({
             ...userData,
             [event.target.name]:event.target.value
-        })
+        })        
 
         setErrors({
             ...errors,
@@ -29,8 +29,9 @@ const Form = (props)=>{
         login(userData)
     }
 
+
     return (
-        <div>
+        <div className={style.loginbox}>
             <p>Login</p>
             <form onSubmit={handleSubmit}>
                 <div className={style.userbox}>
@@ -46,7 +47,13 @@ const Form = (props)=>{
                 </div>
                 
                 <div>
-                <button type="submit" className={style.btnn}>login</button>
+                <button type="submit" className={style.btnn}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Submit
+                </button>
                 </div>
             </form>
         </div>
@@ -54,4 +61,3 @@ const Form = (props)=>{
 }
 
 export default Form
-

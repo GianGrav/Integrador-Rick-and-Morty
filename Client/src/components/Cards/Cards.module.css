@@ -1,5 +1,24 @@
-.cards-container {
-  display: flex;
-  grid-template-columns: (4, 1rem);    
-  gap: 5rem;
+.container{
+    /* background-color: black;  */
+    background-position: center center;
+    display: grid;
+    gap:1.5em;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    padding: 1em;
+    margin: 1em;
+}
+
+@media (min-width: 700px){
+    .container{
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+}
+
+@media (min-width:1250px){
+    .container{
+        grid-template-columns: repeat(4,1fr);
+    }
 }
