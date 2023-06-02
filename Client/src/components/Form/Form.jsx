@@ -35,15 +35,15 @@ const Form = (props)=>{
             <p>Login</p>
             <form onSubmit={handleSubmit}>
                 <div className={style.userbox}>
-                <input required="" type="text" name="email" value={userData.email} onChange={handleChange} />
-                <label htmlFor="email">Email</label>
-                {errors.email !== ''? <span className={style.error}>{errors.email}</span> : ''}
+                    <input required="" type="text" name="email" value={userData.email} onChange={handleChange} />
+                    <label htmlFor="email">Email</label>
+                    {errors.email !== '' ? <span className={style.error}>{errors.email}</span> : ''}
                 </div>
                 <br /><br /><br />
                 <div className={style.userbox}>
-                <input required="" type="text" name="password" value={userData.password} onChange={handleChange}/>
-                {errors.password!== ''? <span className={style.error}>{errors.password}</span> : ''}
-                <label htmlFor="password">Password</label>
+                    <input required="" type="text" name="password" value={userData.password} onChange={handleChange} />
+                    {errors.password !== '' ? <span className={style.error}>{errors.password}</span> : ''}
+                    <label htmlFor="password">Password</label>
                 </div>
                 
                 <div>
