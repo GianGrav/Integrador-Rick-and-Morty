@@ -16,7 +16,7 @@ const NavBar = ({onSearch,logout})=>{
 
             <div>
             <Link to="/about">
-                <button className={style.submit}><span>👨</span></button>
+                <button className={style.submit}><span>⚠</span></button>
             </Link>
             </div>
 
@@ -26,7 +26,7 @@ const NavBar = ({onSearch,logout})=>{
             
             <div>
             <Link to="/favorite">
-                <button className={style.submit}><span>⭐</span></button>
+                <button className={style.submit}><span>❤</span></button>
             </Link>
             </div>
 

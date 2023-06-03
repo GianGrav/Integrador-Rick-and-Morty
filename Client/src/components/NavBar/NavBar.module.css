@@ -12,14 +12,14 @@
     padding: 0.5em 1em;
     border: transparent;
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24);
-    background: #2E2E2E;
+    background: #5f61d1;
     border-radius: 10px 10px 10px 10px;
     transition: 0.3s;
   }
   
   .submit:hover {
     transition: 0.3s;
-    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    background: linear-gradient(90deg, #ffa600 0%, #00d9ff 100%);
     cursor: pointer;
   }
   
@@ -30,14 +30,14 @@
   .submit span {
     font-weight: 800;
     letter-spacing: 1px;
-    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    background: linear-gradient(90deg, #ffa600 0%, #00d9ff 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: 0.3s;
   }
   
   .submit:hover span {
-    background: #2E2E2E;
+    background: #383333;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: 0.3s;

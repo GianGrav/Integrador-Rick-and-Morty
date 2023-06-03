@@ -7,7 +7,7 @@ const About = () => {
 
             <a href="https://www.linkedin.com/in/giancarlo-gravagna-19269926a/" target="_blank" rel="noreferrer" class={style.buttonLinkedin}><button>Linkedin</button></a>
             <a href="https://github.com/GianGrav" target="_blank" rel="noreferrer" class={style.buttonGithub}><button>GitHub</button></a>
-            <img className={style.portrait} src={yo} alt='Foto del autor del proyecto: Carlos Rojas' />
+            <img className={style.portrait} src={yo} alt='Foto del autor del proyecto: Giancarlo Gravagna' />
 
             <div className={style.container}>
                 <div className={style.box}>
